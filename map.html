@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_164fef5592a3c77a61bb8a2f9094efdb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_164fef5592a3c77a61bb8a2f9094efdb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_164fef5592a3c77a61bb8a2f9094efdb = L.map(
+                "map_164fef5592a3c77a61bb8a2f9094efdb",
+                {
+                    center: [38.00218244990458, -92.92415388477524],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9286f1cdd0198367dde7bc06f644b517 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            var marker_558a2bd210c2448065aec661c2977b35 = L.marker(
+                [34.10292746577968, -117.71045286994072],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_558a2bd210c2448065aec661c2977b35.bindTooltip(
+                `<div>
+                     malott
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdbe7d768b152f7cedbf50b03169bed0 = L.marker(
+                [34.10481853618896, -117.71065735289542],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_cdbe7d768b152f7cedbf50b03169bed0.bindTooltip(
+                `<div>
+                     toll 163 (og zooseum)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b168256bffe07aa2ef3c47f80614c428 = L.marker(
+                [34.05250493979136, -118.25052869133712],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_b168256bffe07aa2ef3c47f80614c428.bindTooltip(
+                `<div>
+                     worlds shortest railway!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02a6f41d50ed16d871bd8ed608258d46 = L.marker(
+                [34.050279474925645, -118.2485468323458],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_02a6f41d50ed16d871bd8ed608258d46.bindTooltip(
+                `<div>
+                     maccheroni republic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_050c137714d1adcf74d1845136eecac9 = L.marker(
+                [34.0509906191272, -118.24906181648181],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_050c137714d1adcf74d1845136eecac9.bindTooltip(
+                `<div>
+                     grand central station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caac0f08da89dda25118869e2776a933 = L.marker(
+                [34.10066690487865, -117.57462278321998],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_caac0f08da89dda25118869e2776a933.bindTooltip(
+                `<div>
+                     haven city market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76d86deb1ca52fc3bc40d54a668acc39 = L.marker(
+                [34.12842272215378, -117.82965957518945],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_76d86deb1ca52fc3bc40d54a668acc39.bindTooltip(
+                `<div>
+                     spotless burgers (og location rip)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_156ea9acdfb5b51745b2a0b0364c8eaf = L.marker(
+                [34.157950159090326, -117.72087822784043],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_156ea9acdfb5b51745b2a0b0364c8eaf.bindTooltip(
+                `<div>
+                     da loop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1f2a34b6285b9173aa25f7e303a597a = L.marker(
+                [34.096521306899966, -117.71152937652464],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_d1f2a34b6285b9173aa25f7e303a597a.bindTooltip(
+                `<div>
+                     FRANK BRUNCH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1eaba334e536623fcd9734ee115576d = L.marker(
+                [40.63378309506481, -74.93655607066954],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_e1eaba334e536623fcd9734ee115576d.bindTooltip(
+                `<div>
+                     clinton station diner
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ef295b7e32a5179ef694509aecd3ba6 = L.marker(
+                [34.095862102683896, -117.71636193049065],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_0ef295b7e32a5179ef694509aecd3ba6.bindTooltip(
+                `<div>
+                     farm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42baf28a2103795f88ca83aaca83f112 = L.marker(
+                [34.099506700504826, -117.71360080487467],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_42baf28a2103795f88ca83aaca83f112.bindTooltip(
+                `<div>
+                     home of the vegan chicken bucket (da coop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ed74a7f552d17baad367539dac0c079 = L.marker(
+                [34.10231603471724, -117.71156747148423],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_6ed74a7f552d17baad367539dac0c079.bindTooltip(
+                `<div>
+                     library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_892b6d9b64263fbe45a1b89c02204461 = L.marker(
+                [34.13053728192434, -117.8885256004669],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_892b6d9b64263fbe45a1b89c02204461.bindTooltip(
+                `<div>
+                     azusa pacific
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9271a76c3ac101217d6a0750ab46425d = L.marker(
+                [34.09536, -117.711766],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_9271a76c3ac101217d6a0750ab46425d.bindTooltip(
+                `<div>
+                     the structure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e35d470491313a26725aba72273f7e3 = L.marker(
+                [40.75040942627361, -73.98637474924038],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_6e35d470491313a26725aba72273f7e3.bindTooltip(
+                `<div>
+                     loc of yummy rice water
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91b5e966912d563132b30f99ea5ee331 = L.marker(
+                [34.09664486272714, -117.71767010350763],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_91b5e966912d563132b30f99ea5ee331.bindTooltip(
+                `<div>
+                     h.o.p.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f361a9035975d7e174247572e9be2dc5 = L.marker(
+                [34.10297093096856, -117.70551475187727],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_f361a9035975d7e174247572e9be2dc5.bindTooltip(
+                `<div>
+                     mcconnel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe00178fac5c9ea86f1d68bb3489bd29 = L.marker(
+                [47.54792, -122.11594],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_fe00178fac5c9ea86f1d68bb3489bd29.bindTooltip(
+                `<div>
+                     ur house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bddd45a9f2f9715c700816829627d3ac = L.marker(
+                [45.52046, -122.67366],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_bddd45a9f2f9715c700816829627d3ac.bindTooltip(
+                `<div>
+                     parking lot we ate stretch the noodle in
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b438fdf62523e987623c3d322504c293 = L.marker(
+                [45.63887, -122.6713],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_b438fdf62523e987623c3d322504c293.bindTooltip(
+                `<div>
+                     staffless kombucha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb114a5bf3c7c1fa7b96211a37ec87ce = L.marker(
+                [34.110464042052065, -117.71663486707942],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_cb114a5bf3c7c1fa7b96211a37ec87ce.bindTooltip(
+                `<div>
+                     b203
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbfeebf57e6012a6f5228719853ab38d = L.marker(
+                [34.111515833914005, -117.53251857652393],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_cbfeebf57e6012a6f5228719853ab38d.bindTooltip(
+                `<div>
+                     victoria gardens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_055f4b0bd84d0c459bd112d3a1de7faf = L.marker(
+                [34.10712, -117.52645],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_055f4b0bd84d0c459bd112d3a1de7faf.bindTooltip(
+                `<div>
+                     l'auberge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e2ee37b3d56353c198e2f2f25ac53fe = L.marker(
+                [34.09228435683535, -118.2823851881632],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_9e2ee37b3d56353c198e2f2f25ac53fe.bindTooltip(
+                `<div>
+                     erewhon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24a6d6b2796e54131d6b277bc77bfe22 = L.marker(
+                [34.039170783323385, -118.75514327467383],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_24a6d6b2796e54131d6b277bc77bfe22.bindTooltip(
+                `<div>
+                     malibu hike
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d3b338d883a531d901edfaae870ee41 = L.marker(
+                [34.099020457738646, -117.88995008816282],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1d3b338d883a531d901edfaae870ee41.bindTooltip(
+                `<div>
+                     gs Ethiopian cuisine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a547e9297d25d6569e8b7c8616f869b = L.marker(
+                [34.090029021056296, -117.89034544583562],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_0a547e9297d25d6569e8b7c8616f869b.bindTooltip(
+                `<div>
+                     SCOOPS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a31c4495ac3aad1f161051e690155fe = L.marker(
+                [32.7243, -117.16843],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_5a31c4495ac3aad1f161051e690155fe.bindTooltip(
+                `<div>
+                     the site of the best bread #rip
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b63e053c54edb93ca98e998ee4f1a503 = L.marker(
+                [32.74727, -117.13015],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_b63e053c54edb93ca98e998ee4f1a503.bindTooltip(
+                `<div>
+                     where you found interstellar pig
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d017f9909e946eb219838edd62e588a3 = L.marker(
+                [40.74967, -73.99218],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_d017f9909e946eb219838edd62e588a3.bindTooltip(
+                `<div>
+                     bagel on the floor of Penn Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8b281643787c450adb65b2aa0e17060 = L.marker(
+                [48.20848, 16.36719],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_c8b281643787c450adb65b2aa0e17060.bindTooltip(
+                `<div>
+                     bbys first kaiserschmarrn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfab9a818bfc6ed42a3b9eb6cf424927 = L.marker(
+                [48.1809, 16.31341],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_dfab9a818bfc6ed42a3b9eb6cf424927.bindTooltip(
+                `<div>
+                     fake roman ruins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5978bb5fb947b9632558eafb63809ec = L.marker(
+                [47.1138, 13.13284],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_e5978bb5fb947b9632558eafb63809ec.bindTooltip(
+                `<div>
+                     austrian alps Native American themed bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_137b7b44564b5b73a98a908f819d40d1 = L.marker(
+                [47.79923, 13.04517],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_137b7b44564b5b73a98a908f819d40d1.bindTooltip(
+                `<div>
+                     10 am beer salzburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d49f346885f57619b3bc2c7e97408757 = L.marker(
+                [48.2098, 16.37516],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_d49f346885f57619b3bc2c7e97408757.bindTooltip(
+                `<div>
+                     the. cheesecake.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1daacd726202b832f0d81a4b598486e = L.marker(
+                [50.08185, 14.41735],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_c1daacd726202b832f0d81a4b598486e.bindTooltip(
+                `<div>
+                     the. sandwich.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a73ac1140ee5d3cc56c60c1dc017c93d = L.marker(
+                [50.08154, 14.41591],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_a73ac1140ee5d3cc56c60c1dc017c93d.bindTooltip(
+                `<div>
+                     dog bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fd33bcc7853e55604eae319963ba9a1 = L.marker(
+                [34.07425246799741, -117.7190024967628],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1fd33bcc7853e55604eae319963ba9a1.bindTooltip(
+                `<div>
+                     mix bowl cafe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1441fee9838d732ac632db8c6037d539 = L.marker(
+                [34.083633603194876, -118.37016773234431],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1441fee9838d732ac632db8c6037d539.bindTooltip(
+                `<div>
+                     crossroads
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84336cfb8c485c1b69fd7752b7330ce1 = L.marker(
+                [37.78308940093364, -122.46067840334636],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_84336cfb8c485c1b69fd7752b7330ce1.bindTooltip(
+                `<div>
+                     b star
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fe9c52477c9796007ba898ca80058f8 = L.marker(
+                [37.89185687215014, -122.29873180355287],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_8fe9c52477c9796007ba898ca80058f8.bindTooltip(
+                `<div>
+                     knafeh. halloumi. turkish eggs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be0899c7545640930139f0b1488e8aa1 = L.marker(
+                [40.80078, -73.95984],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_be0899c7545640930139f0b1488e8aa1.bindTooltip(
+                `<div>
+                     tried to teach u how to ride a bike
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43dfdd1bf8ce106dbba954b2a85622f5 = L.marker(
+                [41.80051228960788, -72.65201091333412],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_43dfdd1bf8ce106dbba954b2a85622f5.bindTooltip(
+                `<div>
+                     lans.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e24a69b325e83f568792255928cc9a0 = L.marker(
+                [34.10428, -117.70847],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_4e24a69b325e83f568792255928cc9a0.bindTooltip(
+                `<div>
+                     gjw suite
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d8fbd306f5dd69c5dcb0015e57c255f = L.marker(
+                [34.72366, -116.16342],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_5d8fbd306f5dd69c5dcb0015e57c255f.bindTooltip(
+                `<div>
+                     road pancakes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b135fab4d69e1c16c3bb59b36c4120b7 = L.marker(
+                [34.867176941204775, -111.8083114217236],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_b135fab4d69e1c16c3bb59b36c4120b7.bindTooltip(
+                `<div>
+                     boys sleepover
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_669e288f59753ff02961d0011b58c2f6 = L.marker(
+                [40.6649214116162, -74.78675513409746],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_669e288f59753ff02961d0011b58c2f6.bindTooltip(
+                `<div>
+                     my house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a9449d12f0b0183e69eef101d39f68b = L.marker(
+                [41.10661, -73.98422],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_6a9449d12f0b0183e69eef101d39f68b.bindTooltip(
+                `<div>
+                     Nani and Nana's house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ef0bfc11f362303ba0a1dc63f1a20ab = L.marker(
+                [34.10292746577968, -117.71045286994072],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_0ef0bfc11f362303ba0a1dc63f1a20ab.bindTooltip(
+                `<div>
+                     malott
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ed59ed3a4e6e75eb3b9a9119b7df1bc = L.marker(
+                [34.10481853618896, -117.71065735289542],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_3ed59ed3a4e6e75eb3b9a9119b7df1bc.bindTooltip(
+                `<div>
+                     toll 163 (og zooseum)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19ea157a02e40dd0f83470339ef206f8 = L.marker(
+                [34.05250493979136, -118.25052869133712],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_19ea157a02e40dd0f83470339ef206f8.bindTooltip(
+                `<div>
+                     worlds shortest railway!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ce0015c01cd0a01650f73fe36558505 = L.marker(
+                [34.050279474925645, -118.2485468323458],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1ce0015c01cd0a01650f73fe36558505.bindTooltip(
+                `<div>
+                     maccheroni republic
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8bd8529cbe7d5c40996dae1276e8458 = L.marker(
+                [34.0509906191272, -118.24906181648181],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_d8bd8529cbe7d5c40996dae1276e8458.bindTooltip(
+                `<div>
+                     grand central station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_960d9421a3908e208fb604243a36c802 = L.marker(
+                [34.10066690487865, -117.57462278321998],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_960d9421a3908e208fb604243a36c802.bindTooltip(
+                `<div>
+                     haven city market
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_905e78eb23b527d42ecf61374cc29d71 = L.marker(
+                [34.12842272215378, -117.82965957518945],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_905e78eb23b527d42ecf61374cc29d71.bindTooltip(
+                `<div>
+                     spotless burgers (og location rip)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62b7784108a8b6d16333ac5779f4a029 = L.marker(
+                [34.157950159090326, -117.72087822784043],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_62b7784108a8b6d16333ac5779f4a029.bindTooltip(
+                `<div>
+                     da loop
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae5c7a0eeb1a70ba24c5fd2c0b2f58d4 = L.marker(
+                [34.096521306899966, -117.71152937652464],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_ae5c7a0eeb1a70ba24c5fd2c0b2f58d4.bindTooltip(
+                `<div>
+                     FRANK BRUNCH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a96f5283fe9c39b403a13233baf6e633 = L.marker(
+                [40.63378309506481, -74.93655607066954],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_a96f5283fe9c39b403a13233baf6e633.bindTooltip(
+                `<div>
+                     clinton station diner
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bc3f8a288176652c0f9533d6bb501f8 = L.marker(
+                [34.095862102683896, -117.71636193049065],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_4bc3f8a288176652c0f9533d6bb501f8.bindTooltip(
+                `<div>
+                     farm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dfe22987bfa57c389509cf5bf57a6cb = L.marker(
+                [34.099506700504826, -117.71360080487467],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1dfe22987bfa57c389509cf5bf57a6cb.bindTooltip(
+                `<div>
+                     home of the vegan chicken bucket (da coop)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88f5f92c61fa368f1fd6b5aa8dc84935 = L.marker(
+                [34.10231603471724, -117.71156747148423],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_88f5f92c61fa368f1fd6b5aa8dc84935.bindTooltip(
+                `<div>
+                     library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9542d42e96c73d3b5eb0303a8e8dc2e3 = L.marker(
+                [34.13053728192434, -117.8885256004669],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_9542d42e96c73d3b5eb0303a8e8dc2e3.bindTooltip(
+                `<div>
+                     azusa pacific
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6a196c80a536da503393e970fb0ca17 = L.marker(
+                [34.09536, -117.711766],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_f6a196c80a536da503393e970fb0ca17.bindTooltip(
+                `<div>
+                     the structure
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f2c744471ebb571f633c918b304b359 = L.marker(
+                [40.75040942627361, -73.98637474924038],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_7f2c744471ebb571f633c918b304b359.bindTooltip(
+                `<div>
+                     loc of yummy rice water
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47fd8d8c16fd99181bfcac7500bcd39f = L.marker(
+                [34.09664486272714, -117.71767010350763],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_47fd8d8c16fd99181bfcac7500bcd39f.bindTooltip(
+                `<div>
+                     h.o.p.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99508b9334a9259fa228bf10e124209d = L.marker(
+                [34.10297093096856, -117.70551475187727],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_99508b9334a9259fa228bf10e124209d.bindTooltip(
+                `<div>
+                     mcconnel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d270252eae1e3b4cca273a2740339ff = L.marker(
+                [47.54792, -122.11594],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1d270252eae1e3b4cca273a2740339ff.bindTooltip(
+                `<div>
+                     ur house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32474c849e75c1b697fbec01620131b9 = L.marker(
+                [45.52046, -122.67366],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_32474c849e75c1b697fbec01620131b9.bindTooltip(
+                `<div>
+                     parking lot we ate stretch the noodle in
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36b180c37f9851059c6b66a606fc3111 = L.marker(
+                [45.63887, -122.6713],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_36b180c37f9851059c6b66a606fc3111.bindTooltip(
+                `<div>
+                     staffless kombucha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1666cfb9c8a54a03a5a14aac6fbc162 = L.marker(
+                [34.110464042052065, -117.71663486707942],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_e1666cfb9c8a54a03a5a14aac6fbc162.bindTooltip(
+                `<div>
+                     b203
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fa0bbafe2c775a449d5138d51a40f68 = L.marker(
+                [34.111515833914005, -117.53251857652393],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_1fa0bbafe2c775a449d5138d51a40f68.bindTooltip(
+                `<div>
+                     victoria gardens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae334d61fca0ff33e29fa905cddb3fe1 = L.marker(
+                [34.10712, -117.52645],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_ae334d61fca0ff33e29fa905cddb3fe1.bindTooltip(
+                `<div>
+                     l'auberge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5d85f0439ffc0d72ca51d15e58fa2ca = L.marker(
+                [34.09228435683535, -118.2823851881632],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_d5d85f0439ffc0d72ca51d15e58fa2ca.bindTooltip(
+                `<div>
+                     erewhon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b58b7c4e0db34dbb55b7ce0e381a4b3c = L.marker(
+                [34.039170783323385, -118.75514327467383],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_b58b7c4e0db34dbb55b7ce0e381a4b3c.bindTooltip(
+                `<div>
+                     malibu hike
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_634a5317e32763ff9e1b000044648a2d = L.marker(
+                [34.099020457738646, -117.88995008816282],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_634a5317e32763ff9e1b000044648a2d.bindTooltip(
+                `<div>
+                     gs Ethiopian cuisine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ff09463f48353b9b0132c84dac772c1 = L.marker(
+                [34.090029021056296, -117.89034544583562],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_6ff09463f48353b9b0132c84dac772c1.bindTooltip(
+                `<div>
+                     SCOOPS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a12b7a43a5e75f16c80a1b232ec2cf0e = L.marker(
+                [32.7243, -117.16843],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_a12b7a43a5e75f16c80a1b232ec2cf0e.bindTooltip(
+                `<div>
+                     the site of the best bread #rip
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fc07d78b491e2b17e77df7ccb0efdb8 = L.marker(
+                [32.74727, -117.13015],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_2fc07d78b491e2b17e77df7ccb0efdb8.bindTooltip(
+                `<div>
+                     where you found interstellar pig
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38522fe0940e42fca0052cdbfcd5cd22 = L.marker(
+                [40.74967, -73.99218],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_38522fe0940e42fca0052cdbfcd5cd22.bindTooltip(
+                `<div>
+                     bagel on the floor of Penn Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c67f29679bc8d52723615fdda51760a = L.marker(
+                [48.20848, 16.36719],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_5c67f29679bc8d52723615fdda51760a.bindTooltip(
+                `<div>
+                     bbys first kaiserschmarrn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e95b3903517fedda9d29cc9e35eaeec8 = L.marker(
+                [48.1809, 16.31341],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_e95b3903517fedda9d29cc9e35eaeec8.bindTooltip(
+                `<div>
+                     fake roman ruins
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a037d682cb40c2a5f8b9ec385db1a46a = L.marker(
+                [47.1138, 13.13284],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_a037d682cb40c2a5f8b9ec385db1a46a.bindTooltip(
+                `<div>
+                     austrian alps Native American themed bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0e9b75494d0c66f1468c5668db7d8a2 = L.marker(
+                [47.79923, 13.04517],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_a0e9b75494d0c66f1468c5668db7d8a2.bindTooltip(
+                `<div>
+                     10 am beer salzburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b37286e7cb962badf779c2bc31590a6 = L.marker(
+                [48.2098, 16.37516],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_3b37286e7cb962badf779c2bc31590a6.bindTooltip(
+                `<div>
+                     the. cheesecake.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_195e9dfc27eae2c3de665db62e0cd4b6 = L.marker(
+                [50.08185, 14.41735],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_195e9dfc27eae2c3de665db62e0cd4b6.bindTooltip(
+                `<div>
+                     the. sandwich.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea58b2dab0c491c7d7aea87817e2bcdb = L.marker(
+                [50.08154, 14.41591],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_ea58b2dab0c491c7d7aea87817e2bcdb.bindTooltip(
+                `<div>
+                     dog bar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_476af4b5f6a566c299af14424089d3b5 = L.marker(
+                [34.07425246799741, -117.7190024967628],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_476af4b5f6a566c299af14424089d3b5.bindTooltip(
+                `<div>
+                     mix bowl cafe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_515a44403183de4a0f527745f26baa89 = L.marker(
+                [34.083633603194876, -118.37016773234431],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_515a44403183de4a0f527745f26baa89.bindTooltip(
+                `<div>
+                     crossroads
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d76557a935d0f9417c9b2eb282a308b = L.marker(
+                [37.78308940093364, -122.46067840334636],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_2d76557a935d0f9417c9b2eb282a308b.bindTooltip(
+                `<div>
+                     b star
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca5c532446a52f0607aee7899d6697f4 = L.marker(
+                [37.89185687215014, -122.29873180355287],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_ca5c532446a52f0607aee7899d6697f4.bindTooltip(
+                `<div>
+                     knafeh. halloumi. turkish eggs
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f8d79ccbdaced955ca78969b8d6eb3e = L.marker(
+                [40.80078, -73.95984],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_3f8d79ccbdaced955ca78969b8d6eb3e.bindTooltip(
+                `<div>
+                     tried to teach u how to ride a bike
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f60ebca5d3f1b354dd61b94fdf185f4c = L.marker(
+                [41.80051228960788, -72.65201091333412],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_f60ebca5d3f1b354dd61b94fdf185f4c.bindTooltip(
+                `<div>
+                     lans.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cc6f7cd837990ef097ef2c59a9c165c = L.marker(
+                [34.10428, -117.70847],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_4cc6f7cd837990ef097ef2c59a9c165c.bindTooltip(
+                `<div>
+                     gjw suite
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_214e236e8b69620ed277bd0a5ba13fc0 = L.marker(
+                [34.72366, -116.16342],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_214e236e8b69620ed277bd0a5ba13fc0.bindTooltip(
+                `<div>
+                     road pancakes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cfcc6a56545f9dc401f20a44b8a9bcf = L.marker(
+                [34.867176941204775, -111.8083114217236],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_3cfcc6a56545f9dc401f20a44b8a9bcf.bindTooltip(
+                `<div>
+                     boys sleepover
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_083a421962a7570db49364710e767546 = L.marker(
+                [40.6649214116162, -74.78675513409746],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_083a421962a7570db49364710e767546.bindTooltip(
+                `<div>
+                     my house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55026a87e85676f409e367437dd4e8e2 = L.marker(
+                [41.10661, -73.98422],
+                {}
+            ).addTo(map_164fef5592a3c77a61bb8a2f9094efdb);
+        
+    
+            marker_55026a87e85676f409e367437dd4e8e2.bindTooltip(
+                `<div>
+                     Nani and Nana's house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
